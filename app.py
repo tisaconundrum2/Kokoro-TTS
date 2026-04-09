@@ -176,4 +176,4 @@ with gr.Blocks() as app:
     stop_btn.click(fn=None, cancels=stream_event)
 
 if __name__ == '__main__':
-    app.queue(api_open=API_OPEN).launch(ssr_mode=True)
+    app.queue(api_open=API_OPEN).launch(ssr_mode=False, server_name="0.0.0.0")
